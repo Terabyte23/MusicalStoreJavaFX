@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbSelectedInstrumentRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="391.0" style="-fx-background-color: #494848;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MusicalInstrumentStoreFX.controller.SelectedInstrumentFormController">
+    <children>
+        <ImageView fx:id="ivCoverInstrument" fitHeight="320.0" fitWidth="393.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../pic/..." />
+            </image></ImageView>
+
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+            <children>
+                <Button fx:id="btTakeOnInstrument" mnemonicParsing="false" onAction="#takeOnInstrument" style="-fx-background-color: #5a5a5a; -fx-text-fill: white; -fx-background-radius: 5; -fx-font-weight: bold; -fx-padding: 10 20;" text="Заказать инструмент">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+                <Button fx:id="btReturnInstrument" mnemonicParsing="false" onAction="#returnInstrument" style="-fx-background-color: #5a5a5a; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-padding: 10 20;" text="Вернуть инструмент" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>
